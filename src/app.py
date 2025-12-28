@@ -21,44 +21,43 @@ app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
 
 # In-memory activity database
 activities = {
+    "Basketball": {
+        "description": "Team basketball practice and games",
+        "schedule": "Mondays and Wednesdays, 4:00 PM - 5:30 PM",
+        "max_participants": 15,
+        "participants": ["alex@mergington.edu"]
+        },
+        "Tennis Club": {
+        "description": "Tennis lessons and friendly matches",
+        "schedule": "Saturdays, 10:00 AM - 12:00 PM",
+        "max_participants": 10,
+        "participants": ["sarah@mergington.edu"]
+        },
+        "Debate Club": {
+        "description": "Develop public speaking and critical thinking skills",
+        "schedule": "Thursdays, 3:30 PM - 5:00 PM",
+        "max_participants": 18,
+        "participants": ["james@mergington.edu", "lucy@mergington.edu"]
+        },
+        "Math Olympiad": {
+        "description": "Advanced mathematics problem solving and competitions",
+        "schedule": "Wednesdays, 4:00 PM - 5:30 PM",
+        "max_participants": 16,
+        "participants": ["ryan@mergington.edu"]
+        },
+        "Art Studio": {
+        "description": "Painting, drawing, and visual arts exploration",
+        "schedule": "Tuesdays and Fridays, 3:30 PM - 5:00 PM",
+        "max_participants": 14,
+        "participants": ["isabella@mergington.edu"]
+        },
+        "Music Band": {
+        "description": "Learn and perform music with school band",
+        "schedule": "Mondays and Thursdays, 4:00 PM - 5:30 PM",
+        "max_participants": 25,
+        "participants": ["noah@mergington.edu", "ava@mergington.edu"]
+        },
     "Chess Club": {
-        },
-        "Basketball Team": {
-            "description": "Join the basketball team and compete in local tournaments",
-            "schedule": "Mondays and Wednesdays, 4:00 PM - 6:00 PM",
-            "max_participants": 15,
-            "participants": []
-        },
-        "Soccer Club": {
-            "description": "Practice soccer skills and participate in matches",
-            "schedule": "Tuesdays and Thursdays, 5:00 PM - 7:00 PM",
-            "max_participants": 20,
-            "participants": []
-        },
-        "Art Club": {
-            "description": "Explore various art techniques and create projects",
-            "schedule": "Fridays, 3:00 PM - 5:00 PM",
-            "max_participants": 10,
-            "participants": []
-        },
-        "Drama Club": {
-            "description": "Participate in theater productions and improve acting skills",
-            "schedule": "Thursdays, 4:00 PM - 6:00 PM",
-            "max_participants": 15,
-            "participants": []
-        },
-        "Debate Team": {
-            "description": "Engage in debates and develop public speaking skills",
-            "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
-            "max_participants": 12,
-            "participants": []
-        },
-        "Science Club": {
-            "description": "Conduct experiments and explore scientific concepts",
-            "schedule": "Tuesdays, 3:00 PM - 4:30 PM",
-            "max_participants": 15,
-            "participants": []
-        }
         "description": "Learn strategies and compete in chess tournaments",
         "schedule": "Fridays, 3:30 PM - 5:00 PM",
         "max_participants": 12,
